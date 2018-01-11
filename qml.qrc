@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>PageSkyss.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>PageYr.qml</file>
+        <file>ImageButton.qml</file>
+        <file>NavDrawer.qml</file>
+        <file>PageTrello.qml</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>icons/close.png</file>
+        <file>icons/reload.png</file>
+        <file>icons/skyss.png</file>
+        <file>icons/trello.png</file>
+        <file>icons/yr.png</file>
+    </qresource>
+</RCC>
