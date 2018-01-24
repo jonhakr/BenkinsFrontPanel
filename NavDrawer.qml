@@ -52,6 +52,7 @@ Drawer {
                 selected: navIndex == 1
                 onClicked: {
                     changeIndex(1)
+                    pageYr.reloadPage()
                 }
             }
             Layout.fillWidth: true

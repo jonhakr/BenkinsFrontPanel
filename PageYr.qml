@@ -4,10 +4,23 @@ import QtWebEngine 1.0
 
 Page {
     title: "Yr"
+    property string urlYr: "http://www.yr.no/place/Norway/Hordaland/Bergen/Bergen/external_box_hour_by_hour.html"
 
     WebEngineView {
+        id: webYr
         anchors.fill: parent
-        url: "http://www.yr.no/place/Norway/Hordaland/Bergen/Bergen/external_box_hour_by_hour.html"
+        url: urlYr
+    }
+
+    Timer {
+        interval: 60000
+        running: true
+        repeat: true
+        onTriggered: reloadPage()
+    }
+
+    function reloadPage() {
+        webYr.url = urlYr
     }
 
 }
