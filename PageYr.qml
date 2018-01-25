@@ -5,7 +5,7 @@ import QtWebEngine 1.0
 Page {
     title: "Yr"
     //property string urlYr: "http://www.yr.no/place/Norway/Hordaland/Bergen/Bergen/external_box_hour_by_hour.html"
-    property string urlYr: "https://www.yr.no/en/detailed/graph/1-92416/Norway/Hordaland/Bergen/Bergen"
+    property string urlYr: "https://www.yr.no/en/detailed/graph/11-31379/Norway/Hordaland/Bergen/Wergeland"
 
     WebEngineView {
         id: webYr
