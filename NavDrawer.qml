@@ -69,7 +69,7 @@ Drawer {
                 id: buttonTrello
                 source: "qrc:/files/icons/trello.png"
                 rounded: true
-                borderRadius: width * 0.18
+                borderRadius: width * 0.1
                 selected: navIndex == 2
                 onClicked: {
                     changeIndex(2)
