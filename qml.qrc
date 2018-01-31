@@ -1,12 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>PageSkyss.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>PageYr.qml</file>
         <file>ImageButton.qml</file>
         <file>NavDrawer.qml</file>
-        <file>PageTrello.qml</file>
         <file>OptionDrawer.qml</file>
         <file>WebPage.qml</file>
     </qresource>
