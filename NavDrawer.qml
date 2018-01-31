@@ -25,14 +25,15 @@ Drawer {
             /* Customized controls used in item views have to be wrapped in
                  * Loader to prevent known bug:
                  * https://bugreports.qt.io/browse/QTBUG-50992 */
+            property int index: 0
             sourceComponent: ImageButton {
                 id: buttonSkyss
                 source: "qrc:/files/icons/skyss.png"
                 rounded: true
                 borderRadius: width * 0.18
-                selected: navIndex == 0
+                selected: navIndex == index
                 onClicked: {
-                    changeIndex(0)
+                    changeIndex(index)
                 }
             }
             Layout.fillWidth: true
@@ -45,13 +46,14 @@ Drawer {
             /* Customized controls used in item views have to be wrapped in
                  * Loader to prevent known bug:
                  * https://bugreports.qt.io/browse/QTBUG-50992 */
+            property int index: 1
             sourceComponent: ImageButton {
                 id: buttonYr
                 source: "qrc:/files/icons/yr.png"
                 rounded: true
-                selected: navIndex == 1
+                selected: navIndex == index
                 onClicked: {
-                    changeIndex(1)
+                    changeIndex(index)
                     pageYr.reloadPage()
                 }
             }
@@ -65,14 +67,15 @@ Drawer {
             /* Customized controls used in item views have to be wrapped in
                  * Loader to prevent known bug:
                  * https://bugreports.qt.io/browse/QTBUG-50992 */
+            property int index: 2
             sourceComponent: ImageButton {
                 id: buttonTrello
                 source: "qrc:/files/icons/trello.png"
                 rounded: true
                 borderRadius: width * 0.1
-                selected: navIndex == 2
+                selected: navIndex == index
                 onClicked: {
-                    changeIndex(2)
+                    changeIndex(index)
                 }
             }
             Layout.fillWidth: true
