@@ -18,17 +18,22 @@ ApplicationWindow {
         onCurrentIndexChanged: navDrawer.changeIndex(currentIndex)
         interactive: false
 
-        PageSkyss {
+        WebPage {
             id: pageSkyss
+            startUrl: "https://avgangsvisning.skyss.no/board/#/?stops=12011493,12011492&viewFreq=10000&terminal=true&colors=dark&name=Wergeland"
         }
 
-        PageYr {
+        WebPage {
             id: pageYr
+            startUrl: "https://www.yr.no/en/list/daily/11-31379/Norway/Hordaland/Bergen/Wergeland"
+            refreshInterval: 60
         }
 
-        PageTrello {
+        WebPage {
             id: pageTrello
+            startUrl: "https://trello.com/b/FYw2hMrL/handleliste.html"
         }
+
     }
 
     NavDrawer {
