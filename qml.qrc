@@ -6,6 +6,7 @@
         <file>NavDrawer.qml</file>
         <file>OptionDrawer.qml</file>
         <file>WebPage.qml</file>
+        <file>NavButton.qml</file>
     </qresource>
     <qresource prefix="/files">
         <file>icons/close.png</file>

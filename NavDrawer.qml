@@ -21,77 +21,30 @@ Drawer {
 
         property real buttonMargins: 5
 
-        /* Customized controls used in item views have to be wrapped in
-         * Loader to prevent known bug:
-         * https://bugreports.qt.io/browse/QTBUG-50992 */
-        Loader {
-            property int index: 0
-            sourceComponent: ImageButton {
-                id: buttonSkyss
-                source: "qrc:/files/icons/skyss.png"
-                rounded: true
-                borderRadius: width * 0.18
-                selected: navIndex == index
-                onClicked: {
-                    changeIndex(index)
-                }
-            }
-            Layout.fillWidth: true
-            Layout.preferredHeight: width
-            Layout.alignment: Qt.AlignVCenter
-            Layout.margins: buttonLayout.buttonMargins
+        NavButton {
+            index: 0
+            source: "qrc:/files/icons/skyss.png"
+            rounded: true
+            borderRadius: width * 0.18
         }
 
-        Loader {
-            property int index: 1
-            sourceComponent: ImageButton {
-                id: buttonYr
-                source: "qrc:/files/icons/yr.png"
-                rounded: true
-                selected: navIndex == index
-                onClicked: {
-                    changeIndex(index)
-                }
-            }
-            Layout.fillWidth: true
-            Layout.preferredHeight: width
-            Layout.alignment: Qt.AlignVCenter
-            Layout.margins: buttonLayout.buttonMargins
+        NavButton {
+            index: 1
+            source: "qrc:/files/icons/yr.png"
+            rounded: true
         }
 
-        Loader {
-            property int index: 2
-            sourceComponent: ImageButton {
-                id: buttonTrello
-                source: "qrc:/files/icons/trello.png"
-                rounded: true
-                borderRadius: width * 0.1
-                selected: navIndex == index
-                onClicked: {
-                    changeIndex(index)
-                }
-            }
-            Layout.fillWidth: true
-            Layout.preferredHeight: width
-            Layout.alignment: Qt.AlignVCenter
-            Layout.margins: buttonLayout.buttonMargins
+        NavButton {
+            index: 2
+            source: "qrc:/files/icons/trello.png"
+            rounded: true
+            borderRadius: width * 0.1
         }
 
-        Loader {
-            property int index: 3
-            sourceComponent: ImageButton {
-                id: buttonNrk
-                source: "qrc:/files/icons/nrk.png"
-                rounded: true
-                selected: navIndex == index
-                onClicked: {
-                    changeIndex(index)
-                }
-            }
-            Layout.fillWidth: true
-            Layout.preferredHeight: width
-            Layout.alignment: Qt.AlignVCenter
-            Layout.margins: buttonLayout.buttonMargins
+        NavButton {
+            index: 3
+            source: "qrc:/files/icons/nrk.png"
+            rounded: true
         }
     }
 }
