@@ -13,5 +13,6 @@
         <file>icons/skyss.png</file>
         <file>icons/trello.png</file>
         <file>icons/yr.png</file>
+        <file>icons/nrk.png</file>
     </qresource>
 </RCC>

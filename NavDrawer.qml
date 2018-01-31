@@ -83,5 +83,25 @@ Drawer {
             Layout.alignment: Qt.AlignVCenter
             Layout.margins: buttonLayout.buttonMargins
         }
+
+        Loader {
+            /* Customized controls used in item views have to be wrapped in
+                 * Loader to prevent known bug:
+                 * https://bugreports.qt.io/browse/QTBUG-50992 */
+            property int index: 3
+            sourceComponent: ImageButton {
+                id: buttonNrk
+                source: "qrc:/files/icons/nrk.png"
+                rounded: true
+                selected: navIndex == index
+                onClicked: {
+                    changeIndex(index)
+                }
+            }
+            Layout.fillWidth: true
+            Layout.preferredHeight: width
+            Layout.alignment: Qt.AlignVCenter
+            Layout.margins: buttonLayout.buttonMargins
+        }
     }
 }

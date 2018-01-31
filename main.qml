@@ -34,6 +34,11 @@ ApplicationWindow {
             startUrl: "https://trello.com/b/FYw2hMrL/handleliste.html"
         }
 
+        WebPage {
+            id: pageNrk
+            startUrl: "https://www.nrk.no/nyheter/"
+        }
+
     }
 
     NavDrawer {
