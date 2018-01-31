@@ -16,6 +16,7 @@ ApplicationWindow {
         orientation: Qt.Vertical
         currentIndex: navDrawer.navIndex
         onCurrentIndexChanged: navDrawer.changeIndex(currentIndex)
+        interactive: false
 
         PageSkyss {
             id: pageSkyss
@@ -32,7 +33,15 @@ ApplicationWindow {
 
     NavDrawer {
         id: navDrawer
-        width: root.width * 0.15
+        edge: Qt.LeftEdge
+        width: root.width * 0.13
+        height: root.height
+    }
+
+    OptionDrawer {
+        id: optionDrawer
+        edge: Qt.RightEdge
+        width: root.width * 0.13
         height: root.height
     }
 }
