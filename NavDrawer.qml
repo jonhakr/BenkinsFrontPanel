@@ -51,7 +51,6 @@ Drawer {
                 selected: navIndex == index
                 onClicked: {
                     changeIndex(index)
-                    pageYr.reloadPage()
                 }
             }
             Layout.fillWidth: true
