@@ -46,7 +46,7 @@ ApplicationWindow {
     OptionDrawer {
         id: optionDrawer
         edge: Qt.RightEdge
-        width: root.width * 0.13
+        width: root.width * 0.1
         height: root.height
     }
 }

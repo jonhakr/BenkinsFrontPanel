@@ -23,7 +23,27 @@ Drawer {
                     Qt.quit()
                 }
             }
-            width: optionColumn.width * 0.5
+            width: optionColumn.width * 0.75
+            height: width
+            anchors.horizontalCenter: optionColumn.horizontalCenter
+        }
+
+        Loader {
+            /* Customized controls used in item views have to be wrapped in
+                 * Loader to prevent known bug:
+                 * https://bugreports.qt.io/browse/QTBUG-50992 */
+            sourceComponent: ImageButton {
+                id: buttonReload
+                source: "qrc:/files/icons/reload.png"
+                rounded: true
+                onClicked: {
+                    if (typeof swipeView.currentItem.reloadPage !== "undefined") {
+                        swipeView.currentItem.reloadPage()
+                    }
+
+                }
+            }
+            width: optionColumn.width * 0.8 // somewhat larger scale because of empty border in current icon...
             height: width
             anchors.horizontalCenter: optionColumn.horizontalCenter
         }
