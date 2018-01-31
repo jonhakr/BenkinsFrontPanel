@@ -3,7 +3,7 @@ import QtQuick.Controls 2.2
 import QtWebEngine 1.0
 
 Page {
-    property string startUrl: "www.google.com"
+    property string startUrl: "https://www.google.com"
     property int refreshInterval: 0 // Seconds
 
     WebEngineView {

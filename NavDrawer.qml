@@ -21,10 +21,10 @@ Drawer {
 
         property real buttonMargins: 5
 
+        /* Customized controls used in item views have to be wrapped in
+         * Loader to prevent known bug:
+         * https://bugreports.qt.io/browse/QTBUG-50992 */
         Loader {
-            /* Customized controls used in item views have to be wrapped in
-                 * Loader to prevent known bug:
-                 * https://bugreports.qt.io/browse/QTBUG-50992 */
             property int index: 0
             sourceComponent: ImageButton {
                 id: buttonSkyss
@@ -43,9 +43,6 @@ Drawer {
         }
 
         Loader {
-            /* Customized controls used in item views have to be wrapped in
-                 * Loader to prevent known bug:
-                 * https://bugreports.qt.io/browse/QTBUG-50992 */
             property int index: 1
             sourceComponent: ImageButton {
                 id: buttonYr
@@ -64,9 +61,6 @@ Drawer {
         }
 
         Loader {
-            /* Customized controls used in item views have to be wrapped in
-                 * Loader to prevent known bug:
-                 * https://bugreports.qt.io/browse/QTBUG-50992 */
             property int index: 2
             sourceComponent: ImageButton {
                 id: buttonTrello
@@ -85,9 +79,6 @@ Drawer {
         }
 
         Loader {
-            /* Customized controls used in item views have to be wrapped in
-                 * Loader to prevent known bug:
-                 * https://bugreports.qt.io/browse/QTBUG-50992 */
             property int index: 3
             sourceComponent: ImageButton {
                 id: buttonNrk
