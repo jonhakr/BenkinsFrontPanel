@@ -5,12 +5,11 @@ import QtQuick.Layouts 1.3
 Drawer {
     modal: true
 
-    ColumnLayout {
-        id: optionLayout
+    Column {
+        id: optionColumn
         anchors.fill: parent
         spacing: 15
-
-        property real buttonMargins: 5
+        padding: 15
 
         Loader {
             /* Customized controls used in item views have to be wrapped in
@@ -24,10 +23,9 @@ Drawer {
                     Qt.quit()
                 }
             }
-            Layout.preferredWidth: optionLayout.width * 0.5
-            Layout.preferredHeight: width
-            Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-            Layout.margins: optionLayout.buttonMargins
+            width: optionColumn.width * 0.5
+            height: width
+            anchors.horizontalCenter: optionColumn.horizontalCenter
         }
     }
 }
